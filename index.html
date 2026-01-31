@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Dashboard de Monitoreo</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <h1>Dashboard del Servidor</h1>
+
+  <div class="card">
+    <h2>Estado del Servidor</h2>
+
+    <p>
+      <b>Servidor</b>
+      <span id="host"></span>
+    </p>
+
+    <p>
+      <b>Sistema</b>
+      <span id="platform"></span>
+    </p>
+
+    <p>
+      <b>CPU</b>
+      <span id="cpu"></span>
+    </p>
+
+    <!-- Barra de memoria -->
+    <div class="bar-container">
+      <span>Uso de Memoria RAM</span>
+      <div class="bar">
+        <div class="bar-fill" id="ramBar"></div>
+      </div>
+      <small id="ramText"></small>
+    </div>
+
+    <p>
+      <b>Uptime</b>
+      <span id="uptime"></span>
+    </p>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
